@@ -1,14 +1,16 @@
-#number of values you want in your hashmap
-x=int(input())
-#taking input 
-phoneBook={}
-for i in range(0,x):
-    name=input('enter the name')
-    phoneno=int(input('enter the phone number'))
-    phoneBook[name]=phoneno
-y=input('enter the name you want to search')
-if y in phoneBook:
-    print(phoneBook[y])
-else:
-    print('not found')
+phonebook = {}
+print("How many numbers do you want to save in a phonebook")
+n = int(input())
 
+for _ in range(n):
+    input_value = input()
+    parts = input_value.split()
+    phonebook[parts[0]] = parts[1]
+
+print("Whose phone number do you want?")
+j = input()
+
+if j in phonebook:
+    print(phonebook[j])
+else:
+    print("Record not found")
