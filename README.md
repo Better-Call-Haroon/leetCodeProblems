@@ -1,2 +1,2 @@
 # leetCodeProblems
-This repo includes practice leetcode problems
+This repo includes practice coding problems
